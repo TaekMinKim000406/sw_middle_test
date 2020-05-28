@@ -1,0 +1,38 @@
+#include "list.h"
+
+using namespace std;
+
+void LinkedList::Append(int data) {
+
+	Node* A = new Node();
+	A->data = data;
+	Node* current = head;
+
+
+	if (head == nullptr) {
+		head = A;
+	}
+	else {
+		while (current->next != nullptr) {
+			current = current->next;
+		}
+		current->next = A;
+	}
+
+}
+
+int LinkedList::Length() {
+	Node* current = head;
+
+	if (head == nullptr) {
+		return 0;
+	}
+	else {
+		int i = 0;
+		do {
+			current = current->next;
+			i++;
+		} while (current->next != nullptr);
+		return ++i;
+	}
+}
