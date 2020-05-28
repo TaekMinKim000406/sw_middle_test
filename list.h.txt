@@ -1,0 +1,15 @@
+#include <iostream>
+
+class Node {
+public:
+	int data=0;
+	Node* next = nullptr;
+};
+
+class LinkedList {
+public:
+	Node* head=nullptr;
+	void Append(int data);
+	int Length();
+	void Print();
+};
