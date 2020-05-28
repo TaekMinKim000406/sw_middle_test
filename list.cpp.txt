@@ -36,3 +36,4 @@ int LinkedList::Length() {
 		return ++i;
 	}
 }
+Linked::Print() d
