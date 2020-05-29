@@ -48,3 +48,4 @@ void LinkedList::Print() {
 		cout << current->data<<endl;
 	}
 }
+this is prac.
