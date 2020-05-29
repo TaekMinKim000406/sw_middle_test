@@ -36,4 +36,15 @@ int LinkedList::Length() {
 		return ++i;
 	}
 }
-Linked::Print() d
+void LinkedList::Print() {
+	Node* current = head;
+	if (head == nullptr)
+	cout << "출력할 원소가 없습니다." << endl;
+	else {
+	do {
+		cout << current->data<<" ";
+		current = current->next;
+	} while (current->next != nullptr);
+		cout << current->data<<endl;
+	}
+}
